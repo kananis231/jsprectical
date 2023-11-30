@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> 1 </title>
+	<style type="text/css">
+		#i1{
+			height: 50px;
+			width: 40%;
+			border: 2px solid black;
+			text-align: center;
+			font-size: 25px;
+		}
+		label{
+			font-family: cursive;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<label>Enter Temperature : </label>
+		<br>
+		<br>
+		<input type="text" id="i1">
+		<br>
+		<br>
+		<h1 id="ans"></h1>
+	</center>
+</body>
+</html>
+<script type="text/javascript">
+	let a = document.getElementById("i1").value
+
+	if(a=="")
+	{
+		document.getElementById("ans").innerHTML = ""
+	}
+	else
+	{
+		if(a >= 80)
+		{
+			document.getElementById("ans").innerHTML = "It's Hot"
+		}
+		else
+		{
+			document.getElementById("ans").innerHTML = "It's Not Hot"
+		}
+	}
+
+</script>

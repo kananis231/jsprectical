@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vowel or Consonant Checker</title>
+</head>
+<body>
+    <p>Enter a character:</p>
+    <input type="text" id="characterInput">
+    <p id="result"></p>
+
+  
+</body>
+</html>
+<script>
+        let character = document.getElementById('characterInput').value
+        let vowels = ['a', 'e', 'i', 'o', 'u'];
+
+        if (vowels.includes(character)) {
+            document.getElementById('result').textContent = 'The character "' + character + '" is a vowel.';
+        } else {
+            document.getElementById('result').textContent = 'The character "' + character + '" is a consonant.';
+        }
+    
+</script>

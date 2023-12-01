@@ -28,8 +28,10 @@
     let a=document.getElementById("in1").vlaue
     let b=document.getElementById("in2").vlaue
     let c=document.getElementById("in3").vlaue
-
-    if(a > b){
+    if(a =="" && b=="" && c==""){
+        document.getElementById("ans").innerHTML=""
+    }else{
+        if(a > b){
         if(a > c){
             document.getElementById("ans").innerHTML="A is Smallest"
         }else{
@@ -42,4 +44,6 @@
         document.getElementById("ans").innerHTML="C is Smallest"
     }
     }
+    }
+    
 </script>

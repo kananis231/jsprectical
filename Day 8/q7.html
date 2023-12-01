@@ -20,9 +20,14 @@
         <br>
         <input type="text" id="in3">
         <br><br>
-        <label for="">Enter Foueth Number</label>
+        <label for="">Enter Fourth Number</label>
         <br>
         <input type="text" id="in4">
+        <br><br>
+        <label for="">Enter Fifth Number</label>
+        <br>
+        <input type="text" id="in5">
+        <br><br><br>
         <h1 id="ans"></h1>
     </center>
 </body>
@@ -32,14 +37,18 @@
     let b=document.getElementById("in2").vlaue
     let c=document.getElementById("in3").vlaue
     let d=document.getElementById("in4").vlaue
+    let e=document.getElementById("in5").vlaue
 
-    if(a =="" && b=="" && c=="" && d==""){
+
+    if(a =="" && b=="" && c=="" && d=="" && e==""){
         document.getElementById("ans").innerHTML=""
     }else{
         if(a < b){
         if(a < c){
             if(a < d){
-                document.getElementById("ans").innerHTML="A is Largest"
+                if(a<e){
+                    document.getElementById("ans").innerHTML="A is Largest"
+                }else
             }else{
             document.getElementById("ans").innerHTML="D is Largest"
         }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>WeekDay</h1>
+        <br>
+        <input type="text" id="in">
+        <br><br><br>
+        <h1 id="ins"></h1>
+    </center>
+</body>
+</html>
+<script>
+    let day=document.getElementById("in").Value
+    let dayname 
+
+    switch (parseInt(day)) {
+        case 1: dayname="Monday"
+        console.log("It's the start of the workweek.")
+        break;
+        case 2: dayname="Tuesday"
+        break;
+        case 3: dayname="Wednesday"
+        break;
+        case 4: dayname="Thurssday"
+        break;
+        case 5: dayname="Friday"
+        console.log("It's almost the weekend!")
+        break;
+        case 6: dayname="Saturday"
+        break;
+        case 7: dayname="Sunday"
+        break;
+        default: dayname= console.log("It's some other day.")
+    
+    }
+document.getElementById("ins").innerHTML=`Today is ${dayname}`  +console.log()
+</script>

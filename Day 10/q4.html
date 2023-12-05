@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Currency Converter</title>
+</head>
+<body>
+  <center>
+    <label for="">Currency Converter</label>
+  <br>
+  <input type="text" id="inputAmount" placeholder="Enter amount to convert">
+  <br><br>
+  <select id="currencyFrom">
+    <option value="USD">USD</option>
+  </select>
+  <br><br>
+  <select id="currencyTo">
+    <option value="INR">INR</option>
+  </select><br><br><br>
+  <h1 id="convertedAmount"></h1>
+  </center>
+
+
+  
+</body>
+</html>
+<script>
+    
+      let inputAmount = document.getElementById("inputAmount").value;
+      let currencyFrom = document.getElementById("currencyFrom").value;
+      let currencyTo = document.getElementById("currencyTo").value;
+      let convertedAmount = 0;
+
+      if (currencyFrom === "USD" && currencyTo === "INR") {
+        convertedAmount = inputAmount * 81.22;
+      } else {
+        
+      }
+
+      document.getElementById("convertedAmount").innerHTML = "Converted Amount: " + convertedAmount;
+    
+  </script>

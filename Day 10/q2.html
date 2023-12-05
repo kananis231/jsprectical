@@ -7,7 +7,7 @@
   <center>
     <label for="">Day of the Week</label>
   <br>
-  <input type="number" id="inputDay" placeholder="Enter a day number (1-7)">
+  <input type="text" id="inputDay" placeholder="Enter a day number (1-7)">
   <br><br><br>
   <h1 id="result"></h1>
   </center>
@@ -16,7 +16,7 @@
 </body>
 </html>
 <script>
-      let dayNumber = parseInt(document.getElementById("inputDay").value);
+      let dayNumber =document.getElementById("inputDay").value;
 
       switch (dayNumber) {
         case 1:

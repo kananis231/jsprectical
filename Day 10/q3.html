@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Special Offer Eligibility Checker</title>
+</head>
+<body>
+  <center>
+    <label for="">Special Offer Eligibility Checker</label>
+  <br>
+  <input type="text" id="numPurchases" placeholder="Enter number of purchases">
+  <br><br>
+  <label for="">Totale Spending</label>
+  <br>
+  <input type="text" id="totalSpending" placeholder="Enter total spending">
+  <br><br><br>
+  <h1 id="result"></h1>
+  </center>
+
+</body>
+</html>
+
+<script>
+      let numPurchases = document.getElementById("numPurchases").value;
+      let totalSpending = document.getElementById("totalSpending").value;
+
+      if (numPurchases >= 3 && totalSpending >= 100) {
+        document.getElementById("result").innerHTML = "Congratulations! You are eligible for a special offer.";
+      } else {
+        document.getElementById("result").innerHTML = "Sorry! You are not eligible for the special offer.";
+      }
+    
+  </script>

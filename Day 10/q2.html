@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <center>
+    <label for="">Day of the Week</label>
+  <br>
+  <input type="number" id="inputDay" placeholder="Enter a day number (1-7)">
+  <br><br><br>
+  <h1 id="result"></h1>
+  </center>
+
+
+</body>
+</html>
+<script>
+      let dayNumber = parseInt(document.getElementById("inputDay").value);
+
+      switch (dayNumber) {
+        case 1:
+          document.getElementById("result").innerHTML = "The day corresponding to 1 is Sunday.";
+          break;
+        case 2:
+          document.getElementById("result").innerHTML = "The day corresponding to 2 is Monday.";
+          break;
+        case 3:
+          document.getElementById("result").innerHTML = "The day corresponding to 3 is Tuesday.";
+          break;
+        case 4:
+          document.getElementById("result").innerHTML = "The day corresponding to 4 is Wednesday.";
+          break;
+        case 5:
+          document.getElementById("result").innerHTML = "The day corresponding to 5 is Thursday.";
+          break;
+        case 6:
+          document.getElementById("result").innerHTML = "The day corresponding to 6 is Friday.";
+          break;
+        case 7:
+          document.getElementById("result").innerHTML = "The day corresponding to 7 is Saturday.";
+          break;
+        default:
+          document.getElementById("result").innerHTML = "Invalid day number. Please enter a number between 1 and 7.";
+      }
+    
+  </script>

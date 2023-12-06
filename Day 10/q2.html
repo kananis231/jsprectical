@@ -18,7 +18,7 @@
 <script>
       let dayNumber =document.getElementById("inputDay").value;
 
-      switch (dayNumber) {
+      switch (parseInt(dayNumber)) {
         case 1:
           document.getElementById("result").innerHTML = "The day corresponding to 1 is Sunday.";
           break;
@@ -43,5 +43,5 @@
         default:
           document.getElementById("result").innerHTML = "Invalid day number. Please enter a number between 1 and 7.";
       }
-    
+
   </script>

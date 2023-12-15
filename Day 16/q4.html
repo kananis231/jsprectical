@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: aliceblue;
+        font-size: 30px;
+    }
+    input{
+        width: 500px;
+        height: 45px;
+        border-radius: 10px;
+    }
+</style>
+<body>
+<center>
+    <label for="">Enter Factor :-</label>&nbsp;&nbsp;
+    <input type="text" id="in1"><br><br>
+    <label for="">Enter Number :-</label>&nbsp;&nbsp;
+    <input type="text" id="in2"><br><br>
+</center>
+</body>
+</html>
+<script>
+    function multiplier(factor){
+    return function(number){
+        return +factor * +number
+    }
+}
+factor = document.getElementById("in1").value 
+number = document.getElementById("in2").value 
+
+console.log(multiplier(factor)(number))
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let quotes=[
+        {text:"The more that you read, the more things you will know, the more that you learn, the more places you’ll go.",
+         author:"Dr. Seuss",category:"education"},
+         {text:"Education is one thing no one can take away from you.",
+         author:"Elin Nordegren",category:"education"},
+         {text:"Education is the key that unlocks the golden door to freedom.",
+         author:"George Washington Carver",category:"education"},
+         {text:"We cannot solve problems with the kind of thinking we employed when we came up with them.",
+         author:"Albert Einstein",category:"motivational"},
+         {text:"Many of life’s failures are people who did not realize how close they were to success when they gave up.",
+         author:"Thomas A. Edison",category:"life"},
+         {text:"You know you’ve reached middle age when you’re cautioned to slow down by your doctor, instead of by the police.",
+         author:"Joan Rivers",category:"funny"},
+    ]
+    let arr=[]
+
+    for(let i=0;i<quotes.length;i++){
+        if(quotes[i].category==="education"){
+            arr.push(quotes[i].text + " " + quotes[i].author)
+        }
+    }
+    console.log(arr)
+</script>

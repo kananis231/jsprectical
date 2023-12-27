@@ -10,3 +10,39 @@
     
 </body>
 </html>
+<script>
+    let library=[
+    {title:"The Blue Umbrella",
+     author:"Ruskin Bond",
+     year:2009},
+
+     {title:"Wings Of Fire",
+     author:"A.P.J. Abdul Kalam",
+     year:1989},
+
+     {title:"God Of Small Things",
+     author:"Roy Arundhati",
+     year:1999},
+
+     {title:"Train To Pakistan",
+     author:"Singh Khushwant",
+     year:2001},
+
+     {title:"Harry Potter and the Philosopher's Stone",
+     author:"J.K. Rowling",
+     year:2000},
+    ]
+ let titlesBeforeYear = [];
+
+ for (let i = 0; i < library.length; i++) {
+   let book = library[i];
+
+   if (book.year < 2000) {
+     titlesBeforeYear.push(book.title);
+   }
+ }
+console.log(titlesBeforeYear)
+ 
+
+
+</script>

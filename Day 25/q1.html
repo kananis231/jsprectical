@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="blue">First Heding</h1>
+    <h1 class="red">Second Heding</h1>
+    <h1 class="green">Third Heding</h1>
+
+    <h3 class="blue">First Heding</h3>
+    <h3 class="red">Second Heding</h3>
+    <h3 class="green">Third Heding</h3>
+
+    <h5 class="blue">First Heding</h5>
+    <h5 class="red">Second Heding</h5>
+    <h5 class="green">Third Heding</h5>
+
+    <button id="btn1">on click</button>
+    <button id="btn2">on click</button>
+    <button id="btn3">on click</button>
+    <button id="btn4">on click</button>
+</body>
+</html>
+<script>
+    document.getElementById("btn1").addEventListener("click",chg)
+    function chg(){
+        var hed=document.querySelectorAll('h1')
+
+        for(let i=0;i<hed.length;i++){
+            hed[i].style.color="red"
+        }
+
+    }
+    document.getElementById("btn2").addEventListener("click",chg1)
+    function chg1(){
+        var hed=document.querySelectorAll('h3')
+
+        for(let i=0;i<hed.length;i++){
+            hed[i].style.color="green"
+        }
+
+    }
+    document.getElementById("btn3").addEventListener("click",chg2)
+    function chg2(){
+        var hed=document.querySelectorAll('h5')
+
+        for(let i=0;i<hed.length;i++){
+            hed[i].style.color="blue"
+        }
+
+    }
+
+    document.getElementById("btn4").addEventListener("click",chg3)
+    function chg3(){
+        var hed=document.querySelectorAll('.red')
+
+        for(let i=0;i<hed.length;i++){
+            hed[i].style.color="red"
+        }
+
+    }
+    document.getElementById("btn4").addEventListener("click",chg4)
+    function chg4(){
+        var hed=document.querySelectorAll('.green')
+
+        for(let i=0;i<hed.length;i++){
+            hed[i].style.color="green"
+        }
+
+    }
+    document.getElementById("btn4").addEventListener("click",chg5)
+    function chg5(){
+        var hed=document.querySelectorAll('.blue')
+
+        for(let i=0;i<hed.length;i++){
+            hed[i].style.color="blue"
+        }
+
+    }
+</script>

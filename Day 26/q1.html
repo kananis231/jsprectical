@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <label for="">Enter The First Value</label>
+        <input type="text" id="in1">
+        <br><br><br>
+        <label for="">Enter The Second Value</label>
+        <input type="text" id="in2">
+        <br><br><br>
+        <label for="">Enter The Third Value</label>
+        <input type="text" id="in3">
+        <br><br><br>
+        <label for="">Enter Fourth Value</label>
+        <input type="text" id="in4">
+        <br><br><br><br>
+
+        <hr>
+        <br><br><br>
+        <h1 class="ans"></h1>
+        <br><br><br>
+        <hr>
+        <button onclick="sum()">Addition</button>
+        <button onclick="sub()">Substraction</button>
+        <button onclick="div()">Divide</button>
+        <button onclick="multi()">Multiply</button>
+    </center>
+</body>
+</html>
+<script>
+   
+    function sum(){
+    let a=document.getElementById("in1").value
+    let b=document.getElementById("in2").value
+    let c=document.getElementById("in3").value
+    let d=document.getElementById("in4").value
+
+    let ans = +a + +b + +c + +d
+        document.querySelector(".ans").innerHTML="Addition of Four Numbers : " + ans
+    }
+
+    function sub(){
+    let a=document.getElementById("in1").value
+    let b=document.getElementById("in2").value
+    let c=document.getElementById("in3").value
+    let d=document.getElementById("in4").value
+
+    let ans = +a - +b - +c - +d
+        document.querySelector(".ans").innerHTML="Substraction of Four Numbers : " + ans
+    }
+
+    function div(){
+    let a=document.getElementById("in1").value
+    let b=document.getElementById("in2").value
+    let c=document.getElementById("in3").value
+    let d=document.getElementById("in4").value
+
+    let ans = +a / +b / +c / +d
+        document.querySelector(".ans").innerHTML="Division of Four Numbers : " + ans
+    }
+
+    function multi(){
+    let a=document.getElementById("in1").value
+    let b=document.getElementById("in2").value
+    let c=document.getElementById("in3").value
+    let d=document.getElementById("in4").value
+
+    let ans = +a * +b * +c * +d
+        document.querySelector(".ans").innerHTML="Multiplication of Four Numbers : " + ans
+    }
+</script>

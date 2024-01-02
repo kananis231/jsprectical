@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <form action="" id="singup">
+            <label for="">Enter Your Name</label>
+            <input type="text" id="nm">
+            <br><br><br>
+            <label for="">Enter Your Email</label>
+            <input type="email" id="em">
+            <br><br><br>
+            <label for="">Enter Your Phone Number</label>
+            <input type="text" id="pm">
+            <br><br><br>
+            <label for="">Enter Your Password</label>
+            <input type="password" id="ep">
+            <br><br><br>
+            <label for="">Confirm Password</label>
+            <input type="password" id="cmp">
+            <br><br><br>
+            <button type="submit">Submit</button>
+            <span id="err" style="color: red;"></span>
+
+        </form>
+    </center>
+</body>
+</html>
+<script>
+    document.getElementById("singup").onsubmit=function(even){
+        let name=document.getElementById("nm").value;
+        let email=document.getElementById("em").value;
+        let phone=document.getElementById("pm").value;
+        let password=document.getElementById("ep").value;
+        let confirm=document.getElementById("cmp").value;
+
+        try {
+            if(/\d/.test(name)){
+                throw new Error("Invalid Name")
+            }
+           if(!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)){
+            throw new Error("Invalid Email!!")
+            }
+            if(!/^\d{10}$/.test(phone)){
+            throw new Error("Invalid Phone NUmber")
+            }
+            if(password != confirm){
+            throw new Error("Confirm Password is Not Matching!!")
+            }
+        } catch (error) {
+            event.preventDefault()
+            document.getElementById("err").innerHTML=error.message
+            
+        }
+    }
+</script>

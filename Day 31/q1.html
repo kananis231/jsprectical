@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    class mydream{
+        constructor(brand,model,engine){
+            this.brand=brand
+            this.model=model
+            this.engine=engine
+        }
+    }
+
+    class FeulCar extends mydream{
+            constructor(brand,model,engine,Fulecapacity){
+                super(brand,model,engine)
+                this.Fulecapacity=Fulecapacity
+            }
+    }
+    const car1=new mydream("BMW","XL1","880cc")
+    const car2=new FeulCar("Audi","r8","9000cc","15000Litters")
+    console.log(car1)
+    console.log(car2)
+</script>

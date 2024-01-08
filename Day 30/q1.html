@@ -16,11 +16,18 @@
 
         setcarbrand(newbrand){
             this.brand=newbrand
+            // console.log(this.brand)
+        }
+        dispaly(setcarbrand){
+            this.brand=setcarbrand
+        }
+        dispalycar(){
             console.log(this.brand)
         }
     }
-
+    
     const mycar=new car;
     mycar.setcarbrand('Toyota')
-
+    mycar.dispaly('BMW')
+    mycar.dispalycar()
 </script>

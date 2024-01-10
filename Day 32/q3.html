@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class food{
+        cook(){
+
+        }
+    }
+    class pizza extends food{
+        cook(){
+            return "The cooking process of pizza is backing"
+        }
+    }
+    class burger extends food{
+        cook(){
+            return "The cooking process of burger is frying"
+        }
+    }
+    class sushi extends food{
+        cook(){
+            return "The cooking process of sushi is steaming"
+        }
+    }
+    const backing = new pizza
+    const frying = new burger
+    const steaming = new sushi
+    console.log(backing.cook())
+    console.log(frying.cook())
+    console.log(steaming.cook())
+</script>

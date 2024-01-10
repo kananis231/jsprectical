@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class Instrument{
+    playSound(){
+        return "Playing...."
+    }
+}
+
+class Guitar extends Instrument{
+    playSound(){
+        return "Strumming the guitar strings"
+    }
+}
+
+class Piano extends Instrument{
+    playSound(){
+        return "Pressing the piano keys"
+    }
+}
+
+const instru = new Instrument
+const pi1 = new Piano
+console.log(pi1.playSound())
+</script>

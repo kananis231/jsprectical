@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/de6d58606eb35cd9.jpg?q=20" alt="">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/009501a3ad6d6fd2.jpg?q=20" alt="">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/ca2843e62171405e.jpg?q=20" alt="">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/f51d4324b73f58d7.jpg?q=20" alt="">
+    </div>
+
+    
+    
+    
+</body>
+</html>
+
+<script>
+
+    let slid = document.querySelectorAll("img")
+    let slidIndex = 0;
+
+    function showSlides (index){
+    for(let i=0; i < slid.length; i++){
+        slid[i].style.display = "none"
+    }
+        slid[index].style.display = "block"
+    }
+
+    function startSlider(){
+        setInterval(()=>{
+        showSlides(slidIndex)
+        slidIndex++
+
+        if(slidIndex >= slid.length){
+            slidIndex = 0
+        }    
+        },2000)
+    }
+    startSlider()
+    showSlides(slidIndex)
+
+</script>

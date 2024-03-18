@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let sk = new WeakSet()
+    let sub1 = {"Name":"Sarthi"}
+    let sub2 = {"Name":"Bhakti"}
+
+    sk.add(sub1)
+    sk.add(sub2)
+    sk.delete(sub2)
+
+    console.log(sk)
+    console.log(sk.has(sub2))
+</script>

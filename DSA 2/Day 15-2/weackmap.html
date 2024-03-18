@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let sk = new WeakMap()
+    let sub1 = {"Name":"Sarthi"}
+    let sub2 = {"Name":"Bhakti"}
+
+    sk.set(sub1,"private")
+    sk.set(sub2,"private")
+    sk.delete(sub2)
+
+    console.log(sk)
+    console.log(sk.has(sub2))
+</script>

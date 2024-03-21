@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class Stack {
+    constructor() {
+        this.queue1 = []
+        this.queue2 = []
+    }
+
+    push(x) {
+        this.queue2.push(x)
+
+        while (this.queue1.length > 0) {
+            this.queue2.push(this.queue1.shift())
+        }
+        this.q      = this.queue1
+        this.queue1 = this.queue2
+        this.queue2 = this.q
+        
+    }
+
+    pop() {
+        return this.queue1.shift()
+    }
+
+    top() {
+        return this.queue1[0]
+    }
+
+    empty() {
+        return this.queue1.length === 0
+    }
+}
+
+
+let s = new Stack()
+s.push(3)
+s.push(2)
+s.push(4)
+console.log(s.top())
+console.log(s.pop())  
+console.log(s.empty()) 
+
+</script>

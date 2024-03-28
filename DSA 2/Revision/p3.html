@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let arr1=[19,16,20,26,10]
+
+let arr2= [4,2,3,8,1]
+
+let m=3
+
+let n=3
+
+function merge(arr1, arr2, m, n) {
+    let newarray = [];
+
+    for (let i = 0; i < m; i++) {
+        newarray.push(arr1[i]);
+    }
+
+    for (let i = 0; i < n; i++) {
+        newarray.push(arr2[i]);
+    }
+
+    newarray = newarray.sort((a, b) => a - b); 
+
+    return newarray
+}
+
+console.log(merge(arr1,arr2,m,n))
+
+</script>
